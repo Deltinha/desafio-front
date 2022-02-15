@@ -1,6 +1,6 @@
 import 'normalize.css';
-import styled from 'styled-components';
 import Navbar from './components/Navbar';
+import Landing from './screens/Landing';
 import GlobalStyle from './styles/GlobalStyle';
 
 export function App() {
@@ -8,6 +8,7 @@ export function App() {
     <>
       <GlobalStyle />
       <Navbar />
+      <Landing />
     </>
   );
 }

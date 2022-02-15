@@ -2,6 +2,10 @@ import styled from 'styled-components';
 import Theme from '../../styles/Theme';
 
 export const Navbar = styled.div`
+  position: fixed;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
   width: 100vw;
   height: 110px;
   background-color: ${Theme.white};
@@ -9,6 +13,10 @@ export const Navbar = styled.div`
   a {
     text-decoration: none;
     color: ${Theme.brown};
+  }
+
+  @media (max-width: 1024px) {
+    height: 57px;
   }
 `;
 
@@ -22,6 +30,9 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -33,15 +44,23 @@ export const LinksContainer = styled.div`
   min-width: 570px;
   font-size: 17px;
   letter-spacing: 5.5px;
-
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
-export const Link = styled.a``;
+export const Link = styled.a`
+  @media (max-width: 1024px) {
+  }
+`;
 
 export const LogoImg = styled.img`
   width: 70px;
+  @media (max-width: 1024px) {
+    width: 40px;
+  }
 `;
 
 export const LogoText = styled.div`
@@ -60,5 +79,9 @@ export const LogoText = styled.div`
     font-weight: 300;
     font-size: 16px;
     letter-spacing: 6px;
+  }
+
+  @media (max-width: 1024px) {
+    display: none;
   }
 `;
