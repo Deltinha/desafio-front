@@ -14,8 +14,8 @@ export default function Navbar() {
       {windowSize.width <= 1024 && (
         <SideMenu isOpen={isSideMenuOpen} setIsOpen={setIsSideMenuOpen} />
       )}
-      <S.Content onClick={() => setIsSideMenuOpen(true)}>
-        <S.SideMenuButton>
+      <S.Content>
+        <S.SideMenuButton onClick={() => setIsSideMenuOpen(true)}>
           <BsThreeDotsVertical />
         </S.SideMenuButton>
         <S.LogoContainer>
@@ -30,9 +30,9 @@ export default function Navbar() {
           </a>
         </S.LogoContainer>
         <S.LinksContainer>
-          <S.Link href="#">ABOUT US</S.Link>
-          <S.Link href="#">MODELS</S.Link>
-          <S.Link href="#">GUARANTEE</S.Link>
+          <a href="#">ABOUT US</a>
+          <a href="#">MODELS</a>
+          <a href="#">GUARANTEE</a>
         </S.LinksContainer>
       </S.Content>
     </S.Navbar>

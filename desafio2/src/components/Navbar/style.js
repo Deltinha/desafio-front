@@ -42,6 +42,7 @@ export const SideMenuButton = styled.div`
   cursor: default;
 
   @media (max-width: 1024px) {
+    pointer-events: auto;
     cursor: pointer;
     display: inherit;
     position: absolute;
@@ -64,11 +65,6 @@ export const LinksContainer = styled.div`
   justify-content: space-between;
   @media (max-width: 1024px) {
     display: none;
-  }
-`;
-
-export const Link = styled.a`
-  @media (max-width: 1024px) {
   }
 `;
 

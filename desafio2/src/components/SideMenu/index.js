@@ -5,8 +5,7 @@ import useOnClickOutside from '../../hooks/useOnClickOutside';
 
 export default function SideMenu({ isOpen, setIsOpen }) {
   const menuRef = useRef();
-
-  useOnClickOutside(menuRef, () => setIsOpen());
+  useOnClickOutside(menuRef, () => setIsOpen(false));
 
   return (
     <S.MenuBackground isOpen={isOpen}>
