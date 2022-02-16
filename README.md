@@ -11,13 +11,13 @@ Link  :  [https://www.figma.com/file/GTEyrXtVtgSDeiocLk7KzCFf/layouttesteavaliac
 1. Clone o repositório
 
 ```sh
-git clone https://github.com/Deltinha/desafio-front.git
+git clone https://github.com/Deltinha/desafio-front
 ```
 
 2. Navegue até a pasta do desafio2
 
 ```sh
-cd desafio2
+cd desafio-front/desafio2/
 ```
 
 3. Instale as dependências
@@ -29,5 +29,5 @@ npm install
 4. Inicie em modo dev
 
 ```sh
-npm run dev
+npm start
 ```
