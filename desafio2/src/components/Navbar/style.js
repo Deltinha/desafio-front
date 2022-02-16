@@ -30,8 +30,24 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   @media (max-width: 1024px) {
     justify-content: center;
+  }
+`;
+
+export const SideMenuButton = styled.div`
+  display: none;
+  pointer-events: none;
+  cursor: default;
+
+  @media (max-width: 1024px) {
+    cursor: pointer;
+    display: inherit;
+    position: absolute;
+    left: 2.8vw;
+    font-size: 38px;
+    color: #e2e0b8;
   }
 `;
 
